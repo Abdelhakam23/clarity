@@ -6,85 +6,159 @@ a {
   text-decoration: none;
 }
 
-
 @font-face {
-    font-family:Inter;
-    src: url(/fonts/Inter-VariableFont_opsz\,wght.ttf);
+  font-family: Inter;
+  src: url(/fonts/Inter-VariableFont_opsz\,wght.ttf);
 }
 
-:root{
-    --main-color:#D8502D;
-    --border-color:#f6f3f4;
+:root {
+  --main-color: #d8502d;
+  --border-color: #f6f3f4;
 }
 
-body{
-    font-family: Inter;
+body {
+  font-family: Inter;
+}
+
+.navbar .navbar-brand .logo {
+  background-color: var(--main-color);
+  padding: 10px 8px;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+}
+
+.navbar .navbar-brand span {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 28px;
+  color: var(--main-color);
+}
+
+.navbar .navbar-toggler {
+  border: none;
+  color: #69717f;
+  padding: 0;
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.navbar .navbar-nav .nav-link.active {
+  color: var(--main-color);
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--main-color);
 }
 
 
-.navbar .navbar-brand .logo{
-    background-color: var(--main-color);
-    padding: 10px 8px;
-    border-radius: 12px;
-    color: white;
-    font-size: 16px;
+.navbar .action-btns button {
+  border-radius: 20px;
+  padding-block: 10px;
+  padding-inline: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 21px;
+  text-transform: capitalize;
 }
 
-.navbar .navbar-brand span{
-font-size: 21px;
-font-weight: 700;
-line-height: 28px;
-color:var(--main-color) ;
+.navbar .action-btns .sign-btn {
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  transition:
+    color 300ms,
+    border 300ms;
 }
 
-.navbar .navbar-toggler{
+.navbar .action-btns .sign-btn:hover {
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
+.navbar .action-btns .start-btn {
+  border: none;
+  background-image: linear-gradient(var(--main-color), #c54428);
+  color: white;
+  transition: box-shadow 200ms;
+}
+
+.navbar .action-btns .start-btn:hover {
+  box-shadow: 0px 4px 4px #ff9c8368;
+}
+
+.navbar .navbar-nav .nav-item .dropdown-menu h3 {
+  font-size: 12.25px;
+  font-weight: 700;
+  line-height: 17.5px;
+  color: rgb(234, 88, 12);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.navbar .navbar-nav .nav-item .dropdown-menu {
     border: none;
-    color: #69717F;
-    padding: 0;
+  max-height: 400px;
+  overflow-y: scroll;
+  scrollbar-width: none;
 }
 
-.navbar .navbar-toggler:focus{
-    box-shadow: none;
+.navbar .navbar-nav .nav-item .dropdown-menu .dev-sections .web {
+  background-color: white;
 }
 
-.navbar .navbar-nav .nav-item .nav-link{
-    font-size: 14px;
-    font-weight: 500;
+.navbar .navbar-nav .nav-item .dropdown-menu .dev-sections .web .icon {
+  background-color: #f8e2db;
+  color: var(--main-color);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 12px;
 }
 
-.navbar .navbar-nav .nav-link.active{
-    color: var(--main-color);
+.navbar .navbar-nav .nav-item .dropdown-menu .dev-sections .web h4 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  color: #000;
 }
 
-.navbar .action-btns button{
-    border-radius: 20px;
-    padding-block: 10px;
-    padding-inline: 20px;
-    font-size: .875rem;
-    font-weight: 500;
-    line-height: 21px;
-    text-transform: capitalize;
+.navbar .navbar-nav .nav-item .dropdown-menu .dev-sections .web p {
+  font-size: 12.25px;
+  font-weight: 400;
+  line-height: 17.5px;
+  color: oklch(0.551 0.027 264.364);
 }
 
-.navbar .action-btns .sign-btn{
-    background-color: transparent;
-    border:  1px solid var(--border-color);
-    transition: color 300ms , border 300ms;
+.navbar .navbar-nav .nav-item .dropdown-menu .help {
+  background-color: #f9ebe7;
+  border: 1px solid var(--main-color);
+  padding: 15px;
+  border-radius: 12px;
+  width: fit-content;
 }
 
-.navbar .action-btns .sign-btn:hover{
-    color: var(--main-color);
-    border: 1px solid var(--main-color);
+.navbar .navbar-nav .nav-item .dropdown-menu .help h4 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  color: oklch(0.21 0.034 264.665);
 }
 
-
-.navbar .action-btns .start-btn{
-    border: none;
-    background-image: linear-gradient(var(--main-color),#C54428);
-    color: white;
-    transition: box-shadow 200ms;
+.navbar .navbar-nav .nav-item .dropdown-menu .help p {
+  font-size: 12.25px;
+  font-weight: 400;
+  line-height: 17.5px;
+  color: oklch(0.446 0.03 256.802);
 }
 
-.navbar .action-btns .start-btn:hover{
-    box-shadow: 0px 4px 4px #ff9c8368;
+.navbar .navbar-nav .nav-item .dropdown-menu .help a {
+  font-size: 12.25px;
+  font-weight: 600;
+  line-height: 17.5px;
+  color: rgb(195, 66, 12);
 }

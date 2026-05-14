@@ -1,0 +1,11 @@
+@media (min-width: 992px) {
+  .navbar .navbar-nav .nav-item .dropdown-menu {
+   left: 50%;
+   top: 85%;
+   min-width: max-content;
+   transform: translateX(-50%);
+  border: 1px solid #f6f3f4 !important;
+  border-radius: 15px;
+
+  }
+}
